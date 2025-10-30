@@ -2,13 +2,13 @@ pipeline {
     agent any {
         stages
         {
-            stage('Build'){
+            stage("Build"){
                 steps{
                     echo 'Build'
                     bat 'docker build -t myapp .'
                 }
             }
-            stage('Run'){
+            stage("Run"){
                 steps{
                     echo 'Run'
                     bat 'docker rm -f mycontainer || exit 0'
