@@ -17,6 +17,7 @@ pipeline
                 }
             }
         }
+    }
         post{
             success{
                 echo 'Test passed'
@@ -25,5 +26,5 @@ pipeline
                 echo 'Test failed'
             }
         }
-    }
+    
 }
