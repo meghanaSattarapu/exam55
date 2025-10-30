@@ -4,7 +4,7 @@ app = Flask(__name__)
 def form():
     return render_template("form.html")
 @app.route('/submit',method = 'POST')
-def home():
+def main():
     name = request.form['name']
     date = request.form['date']
     gender = request.form['gender']
