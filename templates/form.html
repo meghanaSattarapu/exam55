@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Fill the form</h1>
-    <form methods = 'POST' action ='/submit'>
-        <label for = "name">Name</label>
-        <input type = text name = name>
-        <label for = "date">Dob</label>
-        <input type = date name = date>
-        <label for = "gender">Gender</label>
-        <input type = radio name = Male value = Male>Male
-        <input type = radio name = Female value = Female>Female
-        <button onclick ="/submit">submit</button>
-
+    <h1>Hello</h1>
+    <form action = "/submit" method ="POST">
+        <h1>Enter username :</h1>
+    <input type = text name = username>
+    <br></br>
+    <h1>Enter dob</h1>
+    <input type=date name = date>
+    <br></br>
+    <label for="html">
+    <input type = radio name = gender value = Male>Male</label>
+    <br></br>
+     <label for="html">
+    <input type = radio name = gender value = Female>Female</label>
+    <br></br>
+    <button>Submit</button>
+    </form>
 </body>
 </html>
