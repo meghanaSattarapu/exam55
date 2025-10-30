@@ -3,7 +3,7 @@ app = Flask(__name__)
 @app.route('/')
 def form():
     return render_template("form.html")
-@app.route('/submit',method = 'POST')
+@app.route('/submit',method = ['POST'])
 def main():
     name = request.form['name']
     date = request.form['date']
